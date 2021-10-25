@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    div {
+      max-width: 1100px;
+      width: cacl(100% - 60px);
+      display: block;
+      margin: 0 auto;
+      background-color: yellow;
+      padding: 30px;
+    }
+    ul {
+      display: inline-block;
+      width: 100%;
+    }
+    ul li {
+      width: 23.5%;
+      float: left;
+      margin-left: 2%;
+    }
+    ul li:first-child {
+      width: 49%;
+      margin-left: 0;
+    }
+    ul li img {
+      width: 100%;
+    }
+   
+   /* tu man hinh pc -> 1000 : giao dien giu nguyen
+    < 1000: bien doi*/
+
+    @media only screen and (max-width: 1000px) {
+      ul li {
+        width: 49%;
+        margin-left: 0;
+      }
+      ul li:first-child {
+        width: 100%;
+      }
+      ul li:last-child{
+        margin-left: 2%;
+      }
+    }
+
+    @media only screen and (max-width: 700px) {
+      ul li {
+        width: 100% !important;
+        margin: 0 !important;
+      }
+      ul li img {
+        max-width: 150px;
+        width: 50%;
+        float: left;
+      }
+
+      ul li:first-child img {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+    
+
+  </style>
+  
+
+  <div>
+    <ul>
+      <li>
+        <img src="https://znews-photo.zadn.vn/w960/Uploaded/kbvunuo/2021_10_21/DSC06384.JPG">
+        <p>Những kỹ năng đặc biệt của người thông minh</p>
+      </li>
+      <li>
+        <img src="https://znews-photo.zadn.vn/w960/Uploaded/kbvunuo/2021_10_21/DSC06384.JPG">
+        <p>Những kỹ năng đặc biệt của người thông minh</p>
+      </li>
+      <li>
+        <img src="https://znews-photo.zadn.vn/w960/Uploaded/kbvunuo/2021_10_21/DSC06384.JPG">
+        <p>Những kỹ năng đặc biệt của người thông minh</p>
+      </li>
+
+    </ul>
+  </div>
+
+</body>
+</html>

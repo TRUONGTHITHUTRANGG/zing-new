@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- có viewport mới chạy trên moblie  -->
+    <title>Zing-Thông tin....</title>
+    <link rel="icon" href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8NDRAOEA8NDg4NDQ4PDQ8ODQ8QDg8OFhEWFxURHxYYHSggGBsxGxUTIT0hJSkrLi4wFx8/RDM4OCgtMSsBCgoKDg0OGhAQGy0dHiY1LS0rNy0vLS03MjErKy0tLS0tLS0uLSstLS0rLSstLSsrLSstNy4tKystLSsrNSsvN//AABEIAOEA4QMBEQACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAAAQcCBAUDBv/EAEQQAAICAAMCBwsJBgcAAAAAAAABAgMEBREGQRIhMVFUktIHExYiQlJhcZOh0xQVI1OBlLHB0TIzRGJykRckorLC4fD/xAAbAQEAAwEBAQEAAAAAAAAAAAAAAgMEBQEGB//EADYRAQACAQICBwQJBQEBAAAAAAABAgMEETHRBRIhQVFSsWGRofAGExQycYGS0uEiQlPB8UMj/9oADAMBAAIRAxEAPwC8QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIlJJNtpJLVtvRJc4HwOed0quuTrwlSv4Lad1jcam/QlxyXp4iyMc976DSdBXvHWzW6vs7/wA/D4uJ/iXj/q8F7K74h5NXTj6PaTzW98ftT/iXj/q8F7K74hGYWR9HNJP91/fH7Wce6Rjn5GC9jd8Qrm0wT9G9JH91/fH7XvDuhY1+Rg/ZW/EKbZrwqn6PaaO+3vj9r3ht7jH5GE9nb8Qotqskd0fP5q56A08d9vfHJ7w23xT8jC+zs7ZTbXZY7o+PNVPQeCO+3vjk94bZYl+RhupZ2yi3SOeO6vunmrnobBHfb3xye0NrMQ/Jw/Us7ZTbpXUx3V9081c9E4Y75+HJ7w2mvfk0dSfaKbdNamO6vun9yqejMUd8/Dk94bQXPdT1Z9opt09qo7q+6f3K56Pxx3z8OTaw+eS8uEX/AEar8dS3F9JLRO2XH+mf9TzZ76Hb7suvhsRG2PCi9edb0+Y+i02qxamnXxTvHzxYb0tSdrPU0IgAAAAAAAAAAAAAAAD4burZrKnC14aD4LxUpd805XTDTWP2uUfs15y7DXed3Z6GwRfLOSf7eH4z8yqoumH1lbJK5hdWySEwurZKZXMLYnd7V2FF6PLVbddhlvRRararsMt6KbVbdVhmvRRarbrsMt6KLVbVVhlvRRarbqsM16KLVbdVhlvRRarpZZinCyL3NqMvU3/5mvonUW0+qrtwttWfz4T+U/Ddi1WLrUn2PqD79xwAAAAAAAAAAAAAAABXHdfwktMLiFrwYu2mXolLgyj/ALJGnTzxh3OhckRN6eO0+7/qty+YfRVskrmF1bBCYXVskrmF1bMkyuYXRZ612FN6E1bVdhlvRRarbqsMt6KLVbdVhmvRTaraqsMt6KLVbddhlvRRarbqsM16KLVb2Cm3ZBLlc4JevhIjp8UzqMcR5q+sMmeNsdp9kvuD9BfOgAAAAAAAAAAAAAAADUzbLqsZRPD3R4Vdi0e5p8qknuaej+wlW01neFmLLbFeL14wqHPNhsdhJvgVyxVOr4NlMeFPTdrWuNP1ao2VzUtx7H0mn6Tw5I/qnqz7efNxPmvFdFxf3W7snszXxj3uhXVYfPX9Ucz5rxXRcX92u7JCdvFbXV4fPX9Uc2XzXiui4r7td2SudvFbXWYP8lf1RzT814ro2K+7XdkhOy6Nbp/8lf1RzSsrxXRsV93t/QrmFsa7T/5K/qjm9IZdil/DYr7vb+hVam5Or00/+lf1RzZNTrlwZxnXLi1jOEoS03cT4zNehFqXjrUmLR7J39GxVYZb0V2q2qrDLeii1W3VYZb0U2q26rDNeii1X02ymDdk+/teJXqofzT/AOvx9R0eidHvk+utwjh+P8fPBxek80Vj6uOM8X1h9G4gAAAAAAAAAAAAAAAAAAAAAAAAfObZ7UQy6ngx4M8Van3mt8kV9ZL+Ve9/a17EOp0X0bbWZO3spHGf9R7fTip6zFTsnKyyTnZZJynOT1cpPeV2q/QKYqUpFKRtEcHtVYZb0QtVt1WGa9FFqtqqwy3ootV39nMqnjLN8aoNd8n/AMV6fw/tqwaOc1u3h38nK6Q1ddNXxtPDnKx6KY1wUIJRjFaRS5EjvVrFYisdkPk7Wm0za3bLMkiAAAAAAAAAAAAAAAAAAAAAAAOJtVtFVltHDlpO2eqoq145y53zRXFq/wA2iVazLbodFfVZOrHZHfPh/PhClcfjrcTdO+2TnZY9ZN8noSW5LmLOq+80+OmGkY6RtEfPveCITDXWzOE9Cq1U9t21XYZr0VWq7uzeVWY+7vcNYwjo7bNOKEfzb3L9CmME3nZy+kNXTSY+tPbM8I8f48VtYDB14eqNVceDCC0XO3vbe9m+tYrG0Phc2W+W83vO8y2CSsAAAAAAAAAAAAAAAAAAAAAAAczaHO6cvw7vtevk1wT8e2zdFfruRKlJtO0L9Pp757xSv/FI5zmt2OvliLnrKXFGK/ZrhugvQvea4pFY2h9npcNMFIpT/vtaRCYba2SQmF1bJK5hdWzpZBlV2OvjRUuN8c5v9muG+T/TeVWqo1usxaXFOTJ+UeM+C68lyqrA0RoqXFHjlJ/tWT3zfpPYiIfnmq1WTU5ZyZOPpHhDfPWYAAAAAAAAAAAAAAAAAAAAAAAaeb5nTgqJ33S4NcF65SluilvbJVrNp2hPHjtktFa8VH7R57bmOId1nFFaxpq11jVDm9L53v8AUkl0aYopG0PqdJhrgp1a8e+fFyzyYbq2SQmF1bJK5hdWzbyzL7cXdCimPDsm+LzYrfJvdFc5XbsM2ppgxzkyTtEfO0e1dmzOQ1Zdh1VDxpy0lda141k+f0LmW7+5TMvhddrcmry9e/Dujwj54y654xgAAAAAAAAAAAAAAAAAAAAAADwxuLrw9U7rZqFdcXKcnyJfm/RvPa1m07Q9rWbTtCkNrtpbMzv4T1hRW2sPVryLz3zyfu5Odvr4cEY6+3vd7S4Yw19s8XDJTDdWySuYXVskhMLq2e2Dw1l9kKa4udlklGEVyt/kt+u7Qqt2RvKy2WuOs3tO0QuvZDZmvLaNOKeIsSd9unK/MXNFe/lMdrdaXyGv119VfeeyscI+e93yLCAAAAAAAAAAAAAAAAAAAAAAAMLrY1wlOcowhCLlOUmlGMUtW29yPYiZnaBSu2+1ksyt4FbccJVL6OPGnbL62S/BbvXydrTaX6qN5+86enxxj7Z4vmEXzDbWySuYXVskrmF1bM6a5TlGEIynOclGEYrWUpN6JJc5Xbs7ZW9eKxvPZC5dh9k45dX3yzgyxdsfpJLjVUfq4v8AF736EjnZcnXns4PntdrZ1Fto7Kxw5y+qKnPAAAAAAAAAAAAAAAAAAAAAAAESaS1fElxtvkSAp3ugbZfLpvC4eT+SVy8aS/iJp8v9C3c/LzHa0el+r/rvx9P5asWPq9s8XxhvmGmLJITC6tklcwurZkuPiWrbaSSWrb3LQhMLq2W53P8AY/5HFYrER/zU4+JB6P5PB7v63ve7k59eVqM/Xnq14OTrNX9b/RX7vr/D7YysAAAAAAAAAAAAAAAAAAAAAAAAAVP3SNtO/OWAws/ootxxVsX+8e+pPzed7+Tk116mj023/wBL/lzX46d8q8TOnEr92aZLdLdkj3ZOJTqQmFtbLS7nWx3elHHYmH0rWuGqkv3afJY153Mt3r5OPq9T1p6lOHeyanU9b+ivDvWGYGIAAAAAAAAAAAAAAAAAAAAAAAAPg+6ptPLB0RwlMnG/FRbnKL0lXRro2uZt6rX0S36GzSYYvbrTwhOkbzupuLOvuv3ZpkolLdkmSiUt2aZKJevbDXyqnGyDSnCSlBuEZpSXI+DJNP7ULVi0bSlvv2S73hzmvTZ+wwvwzLOjw+X4zzexhxeX15nhxmvTZ+wwvwyE6TD5fjPNbGDD5fjPNPhvmvTZ+wwvwyE6XF5fXmtjTYPL8Z5p8N816bP2GF+GQnTYvL681kaTT+X4zzT4b5r0yfsML8MhOnx+HqtjRabyfGeafDfNOmT9hhvhkJwU8PVZGg0vk+M821gu6BmVUk52wxEdeONtVcdVzawUdPeV2wV/Av0Vprx2RNfwnnusrZbaanM6nKCddtenfqZPWUdeRp+VHl4zNek1lwtZo76a21u2J4T897uEGMAAAAAAAAAAAAAAAAUD3SsTKzOcVq+Kt1VwXNFVRenWcn9p19LG2KFteD5pM0xKcSzTJxKW7JMlEpbs0yUS93ZJkolJmmepxKSEwtrZJCYXVskrmF1bJK5hdWySEwurYK5hfWzs7I5jLC5hh7I8krYU2Lzq7JKLXvT9cUU5Kb1lVrccZdPas90bx+Mdv8L4MD44AAAAAAAAAAAAAAAAUR3Vctnh82stafe8XGFtUt2qhGE4686cdfVJHU0t4nHt4J1nsfIJmqJT3ZpkolKJZJkt0t2aZKJes0yUSluyTJxKTNM9SiUkZhbWySuYXVskrmF1bJITC+tgrmF1bOxslgJYrMMNXFPiuhbN+bXXJSk/cl65Ioyz1azKGqzRjwWmfDb39n8r6Oa+TAAAAAAAAAAAAAAAAHL2iyDD5lh3RiItrXhQnF6WVT3Ti9z9zJ48lqTvBEqnzfuV4+mTeHlVi6+PgpSVV3qcZeL/AKjfTV0n73YnFnI8Bc26Db7Sjtl32nF5vVLrQlbD5t0G3r0ds9+1YvN68nvWhktiM16Fb16e2S+1YvN68kuvXxZLYnNehW9entHv2vD5vXk969fFktis06Fb16e0S+2YfN68kvrK+LJbFZp0K3r09ol9sweb4Tye/WV8WS2LzToVvXp7R79sweb4Tyexlr4p8DM06Hb16e0RnV4PN8J5LIz08U+BmZ9Dt69PaITqsPm9eS2NTj8fU8DMz6Hb16e0QnU4fN68lsavF5vXk28BsDmV0tJUxojqtZ3Ww009UG2/7Fd9TijhO6U6/FWOyd/w/lZuyey9OWVtRffLrNO+3SWjlpyRS8mPoOflyzkly9Tqr557eyO6HeKmYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB//2Q==" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="assets/CSS/main.css">
+    <link rel="stylesheet" href="assets/CSS/responesive.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.4-web/css/all.min.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+<!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> -->
+</head>
+<body>
+    
+        <div class="header">
+            <div class="container">
+                    <a href="" class="logo">
+                        <img src="https://static-znews.zadn.vn/images/logo-zing-home.svg" alt="" class="img-logo">
+                     tri thức trực tuyến
+                    </a>
+                <ul class="nav">
+                    <li><a href="">Xuất bản </a></li>
+                    <li><a href="">Sách </a></li>
+                    <li><a href="">Xã hội </a></li>
+                    <li><a href="">Thế Giới</a></li>
+                    <li><a href="">Kinh doanh </a></li>
+                    <li><a href="">Công nghệ </a></li>
+                    <li><a href="">Sức khỏe</a></li>
+                    <li><a href="">Thể thao </a></li>
+                    <li><a href="">Giải trí </a></li>
+                    <li><a href="">Đời sống</a></li>
+                </ul>
+               <span> 
+                <i class="fas fa-bars nav-icon--bar"></i>
+               </span> 
+               <div class="header-search">
+                <i class="fas fa-search icon-search"></i>
+                <img src="https://s120-ava-talk.zadn.vn/f/b/f/3/11/120/531b7a86b88dfb8e00f01ea443ccb7fd.jpg" alt="" class="image">
+               </div>
+               
+            </div>
+        </div>
+        <div class="content">
+            <div class="container">
+                <!-- <div class="content__info">
+                    <img src="https://static-znews.zadn.vn/images/stat.svg" alt="" class="img-arrow">
+                    <h3 class="info-data">Số liệu Covid-19</h3>
+                    <h3 class="info-data">Vòng loại WC2020</h3>
+                    <h3 class="info-data">Vượt qua vòng loại</h3>
+                    <h3 class="info-data">Tư vấn cùng bác sĩ khanh</h3>
+
+                    <div class="widget-weather">
+                        <span class="weather-city">Quảng Nam</span>
+                        <span class="weather">26°C  / 24-28°C</span>
+                        <img src="https://static-znews.zadn.vn/images/icons/weather/v2/cloudy.png" alt="" class="img-weather">
+                        
+                    </div>
+                </div> -->
+                <div class="content-body">
+                    <div class="content-left">
+                        <div class="content-info-left">
+                            <img src="https://znews-photo.zadn.vn/w210/Uploaded/mdf_reovdl/2021_10_18/DSC_5682_DH.jpg" alt="" class="img-left">
+                            <p class="description">Thêm 3.027 ca Covid-19 tại 49 tỉnh, thành phố</p>
+
+                        </div>
+                        <div class="content-info-left">
+                            <img src="https://znews-photo.zadn.vn/w210/Uploaded/znanug/2021_10_20/20210610_180401_E68D4099.jpg" alt="" class="img-left">
+                            <p class="description">Thêm 3.027 ca Covid-19 tại 49 tỉnh, thành phố</p>
+
+                        </div>
+                        <div class="content-info-left">
+                            <img src="https://znews-photo.zadn.vn/w210/Uploaded/aeixrdbkxq/2021_10_19/a2.jpg" alt="" class="img-left">
+                            <p class="description">Thêm 3.027 ca Covid-19 tại 49 tỉnh, thành phố</p>
+
+                        </div>
+                        <div class="content-info-left">
+                            <img src="https://znews-photo.zadn.vn/w210/Uploaded/aobohun/2021_10_19/dong_ho_2.jpg" alt="" class="img-left">
+                            <p class="description">Thêm 3.027 ca Covid-19 tại 49 tỉnh, thành phố</p>
+
+                        </div>
+                        <div class="content-info-left content-boder--none">
+                            <img src="https://znews-photo.zadn.vn/w210/Uploaded/mdf_reovdl/2021_10_18/DSC_5682_DH.jpg" alt="" class="img-left">
+                            <p class="description">Thêm 3.027 ca Covid-19 tại 49 tỉnh, thành phố</p>
+
+                        </div>
+                    </div>
+                    <div class="content-general">
+
+                        <div class="content-center">
+                            <img src="https://znews-photo.zadn.vn/w960/Uploaded/jaegtn/2021_10_19/changi_4.jpg" alt="" class="img-Asia">
+                            <p class="tilte"><a href="">
+                                <i class="far fa-image icon-img" ></i>
+                                Khoét núi làm dự án biệt thự ở Nha Trang
+                            </a></p>
+                            <p class="sumary">Chủ đầu tư cho xẻ núi, tạo mặt bằng để xây biệt thự trên núi Chụt, mỗi căn được rao bán cả triệu USD. Dự án này nằm trong khu vực có nguy cơ sạt lở của TP Nha Trang.</p>
+                            <p class="related"><a href="">
+                                <i class="far fa-image icon-img-related" ></i>
+                                
+                                Hàng loạt khu 'đất vàng' bị bỏ hoang ở Nha Trang
+                            </a></p>
+                        </div>
+                        <div class="content-right">
+                            <div class="content-item">
+    
+                                <img src="https://znews-photo.zadn.vn/w480/Uploaded/natmzz/2021_10_20/2021_10_19T203142Z_1571783581_UP1EHAJ1L0TLZ_RTRMADP_3_SOCCER_CHAMPIONS_PSG_RBL_REPORT_1.JPG" alt="" class="img-thumbnail img--tablet">
+                                <a href="" class="thumbnail">
+                                    Messi lập cú đúp trong trận thắng 3-2 của PSG
+                                </a>
+                            </div>
+                            <div class="content-item">
+    
+                                <img src="https://znews-photo.zadn.vn/w480/Uploaded/ovhpaob/2021_05_13/quoc_hoi.jpg" alt="" class="img-thumbnail img--tablet">
+                                <a href="" class="thumbnail">
+                                    Messi lập cú đúp trong trận thắng 3-2 của PSG
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="multimedia">
+            <div class="container">
+                <div class="header-section">
+                    <h3>MULTIMEDIA</h3>
+                    <ul>
+                        <li><a href="">VIDEO</a></li>
+                        <li><a href="">LONGFORM</a></li>
+                        <li><a href="">VOICES</a></li>
+                        <li><a href="">LEND</a></li>
+                        <li><a href="">STORY</a></li>
+                        <li><a href="">QUIZZ</a></li>
+
+                    </ul>
+                </div>
+                <div class="section-content">
+                    <div class="multimedia-box">
+                        <img src="https://znews-photo.zadn.vn/w960/Uploaded/jaegtn/2021_10_19/changi_4.jpg" alt="" class="img-Asia">
+                        <p class="tilte"><a href="">
+                            <i class="far fa-image icon-layout" ></i>
+                            Triển lãm máy bay trực thăng và siêu xe hàng hiếm tại Mỹ
+                        </a></p>
+                        <p class="sumary">Chủ đầu tư cho xẻ núi, tạo mặt bằng để xây biệt thự trên núi Chụt, mỗi căn được rao bán cả triệu USD. Dự án này nằm trong khu vực có nguy cơ sạt lở của TP Nha Trang.</p>
+
+                       
+                    </div>
+                    <div class="multimedia-layout">
+                        <div class="content-box-list">
+                            
+                            <div class="content-box">
+                                <img src="https://znews-photo.zadn.vn/w480/Uploaded/natmzz/2021_10_20/2021_10_19T203142Z_1571783581_UP1EHAJ1L0TLZ_RTRMADP_3_SOCCER_CHAMPIONS_PSG_RBL_REPORT_1.JPG" alt="" class="img-thumbnail">
+                                <a href="" class="thumbnail thumbnail-link">
+                            <i class="far fa-image icon-img-box" ></i>
+
+                                    Messi lập cú đúp trong trận thắng 3-2 của PSG
+                                </a>
+    
+                            </div>
+                            <div class="content-box">
+                                <img src="https://znews-photo.zadn.vn/w480/Uploaded/natmzz/2021_10_20/2021_10_19T203142Z_1571783581_UP1EHAJ1L0TLZ_RTRMADP_3_SOCCER_CHAMPIONS_PSG_RBL_REPORT_1.JPG" alt="" class="img-thumbnail">
+                                <a href="" class="thumbnail thumbnail-link">
+                            <i class="far fa-image icon-img-box" ></i>
+
+                                    Messi lập cú đúp trong trận thắng 3-2 của PSG
+                                </a>
+    
+                            </div>
+                        </div>
+                        <div class="content-box-list">
+                            
+                            <div class="content-box">
+                                <img src="https://znews-photo.zadn.vn/w480/Uploaded/natmzz/2021_10_20/2021_10_19T203142Z_1571783581_UP1EHAJ1L0TLZ_RTRMADP_3_SOCCER_CHAMPIONS_PSG_RBL_REPORT_1.JPG" alt="" class="img-thumbnail">
+                                <a href="" class="thumbnail thumbnail-link">
+                            <i class="far fa-image icon-img-box" ></i>
+
+                                    Messi lập cú đúp trong trận thắng 3-2 của PSG
+                                </a>
+    
+                            </div>
+                            <div class="content-box">
+                                <img src="https://znews-photo.zadn.vn/w480/Uploaded/natmzz/2021_10_20/2021_10_19T203142Z_1571783581_UP1EHAJ1L0TLZ_RTRMADP_3_SOCCER_CHAMPIONS_PSG_RBL_REPORT_1.JPG" alt="" class="img-thumbnail">
+                                <a href="" class="thumbnail thumbnail-link">
+                            <i class="far fa-image icon-img-box" ></i>
+
+                                    Messi lập cú đúp trong trận thắng 3-2 của PSG
+                                </a>
+    
+                            </div>
+                        </div>
+                        
+                    </div>
+
+
+                </div>
+                
+                
+
+            </div>
+        </div>
+
+        <div class="section-publics">        
+            <div class="container">
+                <div class="section-public">
+                    <div class="header-public">
+                        <h3>BOOKS</h3>
+                    </div>
+                    <div class="section-public-book">
+                        <div class="section-book">
+                            <img src="https://znews-photo.zadn.vn/w210/Uploaded/oplukaa/2021_10_18/1_gian_sach_viet_axrn.jpg" alt="" class="img-book">
+                            <p class="descripstion-book">Xu hướng mua bản quyền của các nhà xuất bản, công ty sách</p>
+                        </div>
+                        <div class="section-book">
+                            <img src="https://znews-photo.zadn.vn/w210/Uploaded/oplukaa/2021_10_09/thumb_chau_Phi.jpg" alt="" class="img-book">
+                            <p class="descripstion-book">Xu hướng mua bản quyền của các nhà xuất bản, công ty sách</p>
+                        </div>
+                        <div class="section-book section-book-pixel">
+                            <img src="https://znews-photo.zadn.vn/w210/Uploaded/oplukaa/2021_10_19/thumb_ghe.jpg" alt="" class="img-book">
+                            <p class="descripstion-book">Xu hướng mua bản quyền của các nhà xuất bản, công ty sách</p>
+                        </div>
+                        <div class="section-book section-book-mb section-book-ipad">
+                            <img src="https://znews-photo.zadn.vn/w210/Uploaded/oplukaa/2021_10_18/1_gian_sach_viet_axrn.jpg" alt="" class="img-book">
+                            <p class="descripstion-book">Xu hướng mua bản quyền của các nhà xuất bản, công ty sách</p>
+                        </div>
+                        <div class="section-book section-book-mb section-book-ipad">
+                            <img src="https://znews-photo.zadn.vn/w210/Uploaded/oplukaa/2021_10_18/1_gian_sach_viet_axrn.jpg" alt="" class="img-book">
+                            <p class="descripstion-book">Xu hướng mua bản quyền của các nhà xuất bản, công ty sách</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-new">
+                    <div class="content-item-1">
+                        <div class="new-info">
+                            <img src="https://znews-photo.zadn.vn/w360/Uploaded/jaegtn/2019_12_04/116084819_smallergettyimages_1204224469_1.jpg" alt="" class="img-new">
+                            <div class="new-item">
+
+                                <p class="new-title">Israel phát hiện ca nhiễm biến chủng AY.4.2 đầu tiên</p>
+                                <p class="overview">Bộ Y tế Israel hôm 19/10 xác nhận ca nhiễm biến chủng AY.4.2 đầu tiên ở sân bay tại Tel Aviv trong khi Cơ quan An ninh Y tế Anh thông báo giám sát chặt chẽ biến chủng này. </p>
+                            </div>
+                        </div>
+                        <div class="new-info">
+                            <img src="https://znews-photo.zadn.vn/w360/Uploaded/qfssu/2021_10_20/phim_hay_cua_kim_seon_ho_seonhokim_1.jpg" alt="" class="img-new">
+                            <div class="new-item">
+
+                                <p class="new-title">Israel phát hiện ca nhiễm biến chủng AY.4.2 đầu tiên</p>
+                                <p class="overview">Bộ Y tế Israel hôm 19/10 xác nhận ca nhiễm biến chủng AY.4.2 đầu tiên ở sân bay tại Tel Aviv trong khi Cơ quan An ninh Y tế Anh thông báo giám sát chặt chẽ biến chủng này. </p>
+                            </div>
+                        </div>
+                        <div class="new-info">
+                            <img src="https://znews-photo.zadn.vn/w360/Uploaded/ovhpaob/2021_10_20/chu_tich_nuoc_1.jpeg" alt="" class="img-new">
+                            <div class="new-item">
+
+                                <p class="new-title">Israel phát hiện ca nhiễm biến chủng AY.4.2 đầu tiên</p>
+                                <p class="overview">Bộ Y tế Israel hôm 19/10 xác nhận ca nhiễm biến chủng AY.4.2 đầu tiên ở sân bay tại Tel Aviv trong khi Cơ quan An ninh Y tế Anh thông báo giám sát chặt chẽ biến chủng này. </p>
+                            </div>
+                        </div>
+                        <div class="new-info">
+                            <img src="https://znews-photo.zadn.vn/w360/Uploaded/neg_etpyole/2021_10_05/TLInh.jpg" alt="" class="img-new">
+                            <div class="new-item">
+
+                                <p class="new-title">Israel phát hiện ca nhiễm biến chủng AY.4.2 đầu tiên</p>
+                                <p class="overview">Bộ Y tế Israel hôm 19/10 xác nhận ca nhiễm biến chủng AY.4.2 đầu tiên ở sân bay tại Tel Aviv trong khi Cơ quan An ninh Y tế Anh thông báo giám sát chặt chẽ biến chủng này. </p>
+                            </div>
+                        </div>
+                        <div class="new-info new--border-none">
+                            <img src="https://znews-photo.zadn.vn/w360/Uploaded/znanug/2021_10_20/DSC_9347_1.jpg" alt="" class="img-new">
+                            <div class="new-item">
+
+                                <p class="new-title">Israel phát hiện ca nhiễm biến chủng AY.4.2 đầu tiên</p>
+                                <p class="overview">Bộ Y tế Israel hôm 19/10 xác nhận ca nhiễm biến chủng AY.4.2 đầu tiên ở sân bay tại Tel Aviv trong khi Cơ quan An ninh Y tế Anh thông báo giám sát chặt chẽ biến chủng này. </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="content-item-2">
+
+                    </div>
+                   
+
+                </div>
+
+                <div class="new-Highlights">
+                    <h3 class="header-hlight"> NỔI BẬT 48H</h3>
+                    <div class="hightlight">
+                        <div class="new-highlight-item">
+                            <p class="hlight-title" >XÃ HỘI</p>
+                            <p class="desc-hlight">
+                                Hà Nội nghiên cứu 4 phương án cho học sinh đi học trở lại
+                            </p>
+                        </div>
+                        <div class="new-highlight-item">
+                            <p class="hlight-title" >GIẢI TRÍ</p>
+                            <p class="desc-hlight">
+                                Hà Nội nghiên cứu 4 phương án cho học sinh đi học trở lại
+                            </p>
+                        </div>
+                        <div class="new-highlight-item">
+                            <p class="hlight-title" >XÃ HỘI</p>
+                            <p class="desc-hlight">
+                                Thúy Ngân chật vật đối đầu 3 thành viên nam ở Running Man
+                            </p>
+                        </div>
+                        <div class="new-highlight-item">
+                            <p class="hlight-title" >XÃ HỘI</p>
+                            <p class="desc-hlight">
+                                Hà Nội nghiên cứu 4 phương án cho học sinh đi học trở lại
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-megazie">
+
+            <div class="container">
+                <div class="page-wrapper">
+                    <h3 class="header-hlight">MAGAZINE</h3>
+                    <div class="member-list">
+                        <div class="member-item">    
+                                <img src="https://znews-photo.zadn.vn/860/Uploaded/kbfoplb/2021_10_10/DSC_0039.jpg" alt="" class="img-member">
+                               <div class="abum">
+                                   <h3 class="abum-type">LENS</h3>
+                               </div>
+                               <div class="abum-text">
+                                   <p class="desc-text">Bình Dương đối mặt với làn sóng lao động hồi hương</p>
+                               </div>
+                               <div class="abum-type-icon">
+                                <i class="fas fa-camera type-icon"></i>
+                               </div>
+                        </div>
+
+                        <div class="member-item">    
+                            <img src="https://znews-photo.zadn.vn/860/Uploaded/iutmtn/2021_09_30/Thumb.jpg" alt="" class="img-member">
+                            <div class="abum">
+                                <h3 class="abum-type">LENS</h3>
+                            </div>
+                            <div class="abum-text">
+                                <p class="desc-text">Bình Dương đối mặt với làn sóng lao động hồi hương</p>
+                            </div>
+                            <div class="abum-type-icon">
+                                <i class="fas fa-camera type-icon"></i>
+                               </div>
+                         </div>
+
+                        <div class="member-item member-item--pixel">    
+                            <img src="https://znews-photo.zadn.vn/860/Uploaded/qxjwpprjv/2021_10_08/DSC_49132.jpg" alt="" class="img-member">
+                            <div class="abum">
+                                <h3 class="abum-type">STORYS</h3>
+                            </div>
+                            <div class="abum-text">
+                                <p class="desc-text">Bình Dương đối mặt với làn sóng lao động hồi hương</p>
+                            </div>
+                            <div class="abum-type-icon">
+                                <i class="fas fa-apple-alt type-icon"></i>
+                               </div>
+                          </div>
+
+                          <div class="member-item member-pc member-ipad">    
+                            <img src="https://znews-photo.zadn.vn/860/Uploaded/opluoaa/2021_10_02/Thumb_ngang.jpg" alt="" class="img-member">
+                            <div class="abum">
+                                <h3 class="abum-type">LONGFORM</h3>
+                            </div>
+                            <div class="abum-text">
+                                <p class="desc-text">Bình Dương đối mặt với làn sóng lao động hồi hương</p>
+                            </div>
+                            <div class="abum-type-icon">
+                                <i class="fas fa-book-open type-icon"></i>
+                               </div>
+                    </div>
+                        
+                       
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        
+        <div class="Masthead">
+            <img src="https://tpc.googlesyndication.com/simgad/8428216438041834721?" alt="" class="img-advMasthead">
+        </div>
+
+        <div class="container">
+            
+            <div class="box-category">
+                <div class="box-category-one">
+
+                    <div class="box-category-item">
+                        <h3 class="box-category--heading">XUẤT BẢN</h3>
+                        <div class="box-seletion">
+                            <img src="https://znews-photo.zadn.vn/w360/Uploaded/oplukaa/2021_10_18/1_gian_sach_viet_axrn.jpg" alt="" class="img-category">
+                            <p class="category-title">Xu hướng mua bản quyền của các nhà xuất bản, công ty sách</p>
+
+                        </div>
+
+                        <div class="content-info-left cate--border-top">
+                            <img src="https://znews-photo.zadn.vn/w210/Uploaded/mdf_reovdl/2021_10_18/DSC_5682_DH.jpg" alt="" class="img-left">
+                            <p class="description">Thêm 3.027 ca Covid-19 tại 49 tỉnh, thành phố</p>
+    
+                        </div>
+                        <div class="content-info-left cate--border-top">
+                            <img src="https://znews-photo.zadn.vn/w210/Uploaded/mdf_reovdl/2021_10_18/DSC_5682_DH.jpg" alt="" class="img-left">
+                            <p class="description">Thêm 3.027 ca Covid-19 tại 49 tỉnh, thành phố</p>
+    
+                        </div>
+                    </div>
+                    <div class="box-category-item">
+        
+                        <h3 class="box-category--heading">SÁCH HAY</h3>
+                        <div class="box-seletion">
+                            <img src="https://znews-photo.zadn.vn/w360/Uploaded/oplukaa/2021_10_18/1_gian_sach_viet_axrn.jpg" alt="" class="img-category">
+                            <p class="category-title">Xu hướng mua bản quyền của các nhà xuất bản, công ty sách</p>
+
+                        </div>
+                        <div class="content-info-left cate--border-top">
+                            <img src="https://znews-photo.zadn.vn/w210/Uploaded/mdf_reovdl/2021_10_18/DSC_5682_DH.jpg" alt="" class="img-left">
+                            <p class="description">Thêm 3.027 ca Covid-19 tại 49 tỉnh, thành phố</p>
+    
+                        </div>
+                        <div class="content-info-left cate--border-top cate--border-top">
+                            <img src="https://znews-photo.zadn.vn/w210/Uploaded/mdf_reovdl/2021_10_18/DSC_5682_DH.jpg" alt="" class="img-left">
+                            <p class="description">Thêm 3.027 ca Covid-19 tại 49 tỉnh, thành phố</p>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="box-category-two">
+
+                    <div class="box-category-item">
+        
+                        <h3 class="box-category--heading">TÁC GIẢ</h3>
+                        <div class="box-seletion">
+                            <img src="https://znews-photo.zadn.vn/w360/Uploaded/oplukaa/2021_10_18/1_gian_sach_viet_axrn.jpg" alt="" class="img-category">
+                            <p class="category-title">Xu hướng mua bản quyền của các nhà xuất bản, công ty sách</p>
+
+                        </div>
+                        <div class="content-info-left cate--border-top">
+                            <img src="https://znews-photo.zadn.vn/w210/Uploaded/mdf_reovdl/2021_10_18/DSC_5682_DH.jpg" alt="" class="img-left">
+                            <p class="description">Thêm 3.027 ca Covid-19 tại 49 tỉnh, thành phố</p>
+    
+                        </div>
+                        <div class="content-info-left cate--border-top">
+                            <img src="https://znews-photo.zadn.vn/w210/Uploaded/mdf_reovdl/2021_10_18/DSC_5682_DH.jpg" alt="" class="img-left">
+                            <p class="description">Thêm 3.027 ca Covid-19 tại 49 tỉnh, thành phố</p>
+    
+                        </div>
+                    </div>
+                    <div class="box-category-item">
+        
+                        <h3 class="box-category--heading">XÃ HỘI</h3>
+                        <div class="box-seletion">
+                            <img src="https://znews-photo.zadn.vn/w360/Uploaded/oplukaa/2021_10_18/1_gian_sach_viet_axrn.jpg" alt="" class="img-category">
+                            <p class="category-title">Xu hướng mua bản quyền của các nhà xuất bản, công ty sách</p>
+
+                        </div>
+                        <div class="content-info-left cate--border-top">
+                            <img src="https://znews-photo.zadn.vn/w210/Uploaded/mdf_reovdl/2021_10_18/DSC_5682_DH.jpg" alt="" class="img-left">
+                            <p class="description">Thêm 3.027 ca Covid-19 tại 49 tỉnh, thành phố</p>
+    
+                        </div>
+                        <div class="content-info-left cate--border-top">
+                            <img src="https://znews-photo.zadn.vn/w210/Uploaded/mdf_reovdl/2021_10_18/DSC_5682_DH.jpg" alt="" class="img-left">
+                            <p class="description">Thêm 3.027 ca Covid-19 tại 49 tỉnh, thành phố</p>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-list">
+                <h3 class="video-heading">VIDEO</h3>
+                <div class="video-item">
+                    <iframe class="video-listen" width="769" height="450" src="https://www.youtube.com/embed/mMGigjRewts" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video-scoll-list">
+                        <div class="video-scoll-item">
+                            <iframe class="video-mb" width="110" height="80" src="https://www.youtube.com/embed/atNZdUuT71s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="video-descrip">
+                                <span class="video-title">Nhiều xe chết máy sau cơn mưa lớn ở TP.HCM</span>
+                                <span class="video-general">XÃ HỘI</span>
+                            </div>
+                        </div>
+                        <div class="video-scoll-item">
+                            <iframe class="video-mb" width="110" height="80" src="https://www.youtube.com/embed/atNZdUuT71s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="video-descrip">
+                                <span class="video-title">Nhiều xe chết máy sau cơn mưa lớn ở TP.HCM</span>
+                                <span class="video-general">XÃ HỘI</span>
+                            </div>
+                        </div>
+                        <div class="video-scoll-item">
+                            <iframe class="video-mb" width="110" height="80" src="https://www.youtube.com/embed/atNZdUuT71s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="video-descrip">
+                                <span class="video-title">Nhiều xe chết máy sau cơn mưa lớn ở TP.HCM</span>
+                                <span class="video-general">XÃ HỘI</span>
+                            </div>
+                        </div>
+                        <div class="video-scoll-item">
+                            <iframe class="video-mb" width="110" height="80" src="https://www.youtube.com/embed/atNZdUuT71s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="video-descrip">
+                                <span class="video-title">Nhiều xe chết máy sau cơn mưa lớn ở TP.HCM</span>
+                                <span class="video-general">XÃ HỘI</span>
+                            </div>
+                        </div>
+                        <div class="video-scoll-item">
+                            <iframe class="video-mb" width="110" height="80" src="https://www.youtube.com/embed/atNZdUuT71s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="video-descrip">
+                                <span class="video-title">Nhiều xe chết máy sau cơn mưa lớn ở TP.HCM</span>
+                                <span class="video-general">XÃ HỘI</span>
+                            </div>
+                        </div>
+                        <div class="video-scoll-item">
+                            <iframe class="video-mb" width="110" height="80" src="https://www.youtube.com/embed/atNZdUuT71s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="video-descrip">
+                                <span class="video-title">Nhiều xe chết máy sau cơn mưa lớn ở TP.HCM</span>
+                                <span class="video-general">XÃ HỘI</span>
+                            </div>
+                        </div>
+                        <div class="video-scoll-item">
+                            <iframe class="video-mb" width="110" height="80" src="https://www.youtube.com/embed/atNZdUuT71s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="video-descrip">
+                                <span class="video-title">Nhiều xe chết máy sau cơn mưa lớn ở TP.HCM</span>
+                                <span class="video-general">XÃ HỘI</span>
+                            </div>
+                        </div>
+                        <div class="video-scoll-item">
+                            <iframe class="video-mb" width="110" height="80" src="https://www.youtube.com/embed/atNZdUuT71s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="video-descrip">
+                                <span class="video-title">Nhiều xe chết máy sau cơn mưa lớn ở TP.HCM</span>
+                                <span class="video-general">XÃ HỘI</span>
+                            </div>
+                        </div>
+                        <div class="video-scoll-item">
+                            <iframe class="video-mb" width="110" height="80" src="https://www.youtube.com/embed/atNZdUuT71s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="video-descrip">
+                                <span class="video-title">Nhiều xe chết máy sau cơn mưa lớn ở TP.HCM</span>
+                                <span class="video-general">XÃ HỘI</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="promotion">
+            <div class="container">
+                <div class="page-wrap">
+                    <div class="page-box">
+                        <h3 class="page-tile">ẨM THỰC</h3>
+                        <div class="page-box-item">
+                            <img src="https://znews-photo.zadn.vn/w210/Uploaded/qhj_pwqvdvicbu/2021_10_18/nguyen_minh__1.jpeg" alt="" class="img-food">
+                            <p class="descrip-food">
+                                Nhiều quán cà phê mới ở TP.HCM mọc lên sau dịch</p>
+                        </div>
+                        <p class="acticle-title">Loại táo đen của Mỹ phải để vài tháng ăn mới ngon</p>
+                        <p class="acticle-title">Loại táo đen của Mỹ phải để vài tháng ăn mới ngon</p>
+                        <p class="acticle-title acticle--border-none">Loại táo đen của Mỹ phải để vài tháng ăn mới ngon</p>
+
+                    
+                    </div>
+                    <div class="page-box">
+                        <h3 class="page-tile">ẨM THỰC</h3>
+                        <div class="page-box-item">
+                            <img src="https://znews-photo.zadn.vn/w210/Uploaded/qhj_pwqvdvicbu/2021_10_18/nguyen_minh__1.jpeg" alt="" class="img-food">
+                            <p class="descrip-food">
+                                Nhiều quán cà phê mới ở TP.HCM mọc lên sau dịch</p>
+                        </div>
+                        <p class="acticle-title">Loại táo đen của Mỹ phải để vài tháng ăn mới ngon</p>
+                        <p class="acticle-title">Loại táo đen của Mỹ phải để vài tháng ăn mới ngon</p>
+                        <p class="acticle-title acticle--border-none">Loại táo đen của Mỹ phải để vài tháng ăn mới ngon</p>
+
+                    
+                    </div>
+                    <div class="page-box page-box-mb">
+                        <h3 class="page-tile">ẨM THỰC</h3>
+                        <div class="page-box-item">
+                            <img src="https://znews-photo.zadn.vn/w210/Uploaded/qhj_pwqvdvicbu/2021_10_18/nguyen_minh__1.jpeg" alt="" class="img-food">
+                            <p class="descrip-food">
+                                Nhiều quán cà phê mới ở TP.HCM mọc lên sau dịch</p>
+                        </div>
+                        <p class="acticle-title">Loại táo đen của Mỹ phải để vài tháng ăn mới ngon</p>
+                        <p class="acticle-title">Loại táo đen của Mỹ phải để vài tháng ăn mới ngon</p>
+                        <p class="acticle-title acticle--border-none">Loại táo đen của Mỹ phải để vài tháng ăn mới ngon</p> 
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+        </div>
+        <!-- <div class="footer"></div> -->
+
+    
+</body>
+</html>
